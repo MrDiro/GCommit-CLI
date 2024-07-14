@@ -1,0 +1,62 @@
+{
+  "name": "gcommit-cli",
+  "version": "1.0.0",
+  "description": "Git CLI Assistant is a command-line application (CLI)",
+  "author": {
+    "name": "cdairo22",
+    "email": "cdairo2204@gmail.com"
+  },
+  "main": "dist/main.bundle.js",
+  "type": "commonjs",
+  "bin": {
+    "gcommit-cli": "node ./dist/main.bundle.js"
+  },
+  "preferGlobal": true,
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MrDiro/gcommit-cli.git"
+  },
+  "scripts": {
+    "start": "node dist/main.bundle.js",
+    "build": "node esbuild.mjs"
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "keywords": [
+    "git",
+    "commit",
+    "cli",
+    "command",
+    "line",
+    "application",
+    "assistant"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@inquirer/prompts": "^5.0.1",
+    "boxen": "^7.1.1",
+    "chalk": "^4.1.2",
+    "console-table-printer": "^2.12.0",
+    "execa": "^8.0.1",
+    "figlet": "^1.7.0",
+    "file-size": "^1.0.0",
+    "modilitejs": "^1.0.3",
+    "ora": "^8.0.1",
+    "wait": "^0.4.2"
+  },
+  "devDependencies": {
+    "@types/figlet": "^1.5.8",
+    "@types/file-size": "^1.0.3",
+    "@types/node": "^20.14.8",
+    "esbuild": "^0.21.5",
+    "esbuild-node-externals": "^1.13.1",
+    "esbuild-plugin-clean": "^1.0.1",
+    "esbuild-plugin-copy": "^2.1.1",
+    "esbuild-plugin-tsc": "^0.4.0",
+    "typescript": "^5.5.2"
+  }
+}

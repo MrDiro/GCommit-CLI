@@ -1,0 +1,57 @@
+[
+  {
+    "name": "break",
+    "value": ".*",
+    "description": "Breaks compatibility, correlates with a new version"
+  },
+  {
+    "name": "chore",
+    "value": "chore",
+    "description": "Changes in the build process or auxiliary tools"
+  },
+  {
+    "name": "docs",
+    "value": "docs",
+    "description": "Indicates changes in the documentation."
+  },
+  {
+    "name": "feat",
+    "value": "feat",
+    "description": "Indicates the addition of a new feature."
+  },
+  {
+    "name": "fix",
+    "value": "fix",
+    "description": "Describes bug fixes."
+  },
+  {
+    "name": "merge",
+    "value": "merge",
+    "description": "Branch or commit merging."
+  },
+  {
+    "name": "perf",
+    "value": "perf",
+    "description": "Changes that improve performance."
+  },
+  {
+    "name": "revert",
+    "value": "revert",
+    "description": "Reverts a previous commit."
+  },
+  {
+    "name": "refactor",
+    "value": "refactor",
+    "description": "Changes in the code that improve its structure or readability."
+  },
+  {
+    "name": "style",
+    "value": "style",
+    "description": "Changes in code formatting or style."
+  },
+  {
+    "name": "test",
+    "value": "test",
+    "description": "Adding tests or modifying existing ones."
+  }
+]

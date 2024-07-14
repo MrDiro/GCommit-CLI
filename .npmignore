@@ -1,0 +1,7 @@
+# Dependencias y módulos generados por herramientas de desarrollo
+node_modules/
+src/
+
+esbuild.js
+.gitignore
+tsconfig.json
