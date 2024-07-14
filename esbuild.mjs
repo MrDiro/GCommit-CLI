@@ -11,6 +11,7 @@ esbuild.build({
   target: ['es2022'],
   tsconfig: 'tsconfig.json',
   logLevel: 'debug',
+  minify: true,
   format: 'cjs',
   plugins: [
     esbuildPluginClean({ patterns: 'dist/*' }),

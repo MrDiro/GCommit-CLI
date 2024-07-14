@@ -1,4 +1,4 @@
-![image](https://github.com/MrDiro/gcommit-cli/assets/77121383/dd1ebba7-f2c3-4db0-ae5f-7f936473a189)
+![image](https://github.com/user-attachments/assets/250d8e8d-d641-41fb-a9a4-96bd79bf1bd5)
 # Gcommit-cli
 Git CLI Assistant is a command-line application (CLI) that facilitates the management of changes in Git repositories. 
 This tool provides an intuitive interface for performing common Git actions efficiently.
@@ -27,7 +27,7 @@ Install the CLI globally
 ## Usage
 In your console, just type:
 ```bash
-  :~$ gcommit-cli
+  :~$ gcommit
 ```
 ## Contribution
 Contributions are welcome! If you find any bugs or have suggestions to improve this application, feel free to open an issue or send a pull request.
@@ -36,8 +36,6 @@ Contributions are welcome! If you find any bugs or have suggestions to improve t
 This project is licensed under the MIT License. For more details, see the LICENSE file.
 
 ## Screenshots
-![image](https://github.com/MrDiro/gcommit-cli/assets/77121383/d190898c-4ed8-4e2e-8173-f500699f4238)
+![image](https://github.com/user-attachments/assets/417c17d6-4156-46f9-9def-1a00ca388227)
 
-![image](https://github.com/MrDiro/gcommit-cli/assets/77121383/427ee8bf-8d62-4440-9a2b-025d78578fbe)
-
-![image](https://github.com/MrDiro/gcommit-cli/assets/77121383/7fbf4a29-5058-4f5a-befe-299e6b50a0cc)
+![image](https://github.com/user-attachments/assets/4b5ec074-3ce3-401e-9579-4fe54a053261)

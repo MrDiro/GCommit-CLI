@@ -1,6 +1,6 @@
 {
   "name": "gcommit-cli",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Git CLI Assistant is a command-line application (CLI)",
   "author": {
     "name": "cdairo22",
@@ -9,7 +9,7 @@
   "main": "dist/main.bundle.js",
   "type": "commonjs",
   "bin": {
-    "gcommit-cli": "node ./dist/main.bundle.js"
+    "gcommit": "node ./dist/main.bundle.js"
   },
   "preferGlobal": true,
   "engines": {
@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/MrDiro/gcommit-cli.git"
+    "url": "https://github.com/MrDiro/GCommit-CLI.git"
   },
   "scripts": {
     "start": "node dist/main.bundle.js",

@@ -6,6 +6,7 @@ import { printTable } from 'console-table-printer';
 import versionConfig from './version.config.json';
 import { AppService } from "./app.service";
 import { Component } from "modilitejs";
+import path from 'node:path';
 import { $ } from 'execa';
 import wait from 'wait';
 import ora from 'ora';
@@ -104,7 +105,7 @@ export class AppComponent {
   }
 
   private async createGitRepository() {
-    const pkgFile = './package.json';
+    const pkgFile = 'package.json';
 
     try {
       this.spinner.start('Analyzing repository ...');
@@ -132,22 +133,21 @@ export class AppComponent {
         this.spinner.start(bold('Creating git repository ...'));
         await wait(600);
 
-        if (!existsSync(pkgFile)) {
-          await $`npm init --init-version ${['0.0.0']} -y`;
+        if (!existsSync(path.resolve(process.cwd(), pkgFile))) {
+          await $`npm init --init-version ${['0.0.1']} -y`;
         }
         else {
-          await $`npm version ${['0.0.0']} --allow-same-version`;
+          await $`npm version ${['0.0.1']} --allow-same-version`;
         }
 
         const pkg = JSON.parse(
-          readFileSync(pkgFile).toString()
+          readFileSync(path.resolve(process.cwd(), pkgFile)).toString()
         );
 
         this.createGitIgnoreFile();
         await $`git init -b ${[branchName]}`;
         await $`git add .`;
-        await $`git commit -m ${[`"chore: first commit"`]} -m ${[`"First commit for the project ${pkg['name']}"`]}`
-        await $`npm version ${['minor']}`;
+        await $`git commit -m ${[`"chore: first commit (v0.0.1)"`]} -m ${[`"First commit for the project ${pkg['name']}"`]}`
 
         this.spinner.succeed('Repository created.');
 
@@ -173,10 +173,10 @@ export class AppComponent {
   }
 
   private createGitIgnoreFile() {
-    const file = './gitignore';
+    const file = '.gitignore';
 
-    if (!existsSync(file)) {
-      writeFileSync(file, `
+    if (!existsSync(path.resolve(process.cwd(), file))) {
+      writeFileSync(path.resolve(process.cwd(), file), `
         # Backup files created by text editors
         *~
 
