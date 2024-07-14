@@ -1,6 +1,6 @@
 {
   "name": "gcommit-cli",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Git CLI Assistant is a command-line application (CLI)",
   "author": {
     "name": "cdairo22",
