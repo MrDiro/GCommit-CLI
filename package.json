@@ -9,9 +9,11 @@
   "main": "dist/main.bundle.js",
   "type": "commonjs",
   "bin": {
-    "gcommit": "node ./dist/main.bundle.js"
+    "gcommit": "dist/main.bundle.js"
   },
-  "preferGlobal": true,
+  "publishConfig": {
+    "access": "public"
+  },
   "engines": {
     "node": ">=18.0.0"
   },
